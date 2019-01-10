@@ -5,4 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: 'wallet.page.html',
   styleUrls: ['wallet.page.scss']
 })
-export class WalletPage {}
+export class WalletPage {
+  WindowsURL = "https://github.com/vigcoin/wallet/releases/download/1.0.0-a1/vigcoin-windows-64.zip";
+  LinuxURL = "https://github.com/vigcoin/wallet/releases/download/1.0.0-a1/vigcoin-linux-64.zip";
+}
