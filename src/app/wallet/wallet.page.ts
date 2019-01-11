@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['wallet.page.scss']
 })
 export class WalletPage {
-  WindowsURL = "https://github.com/vigcoin/wallet/releases/download/1.0.0-a1/vigcoin-windows-64.zip";
-  LinuxURL = "https://github.com/vigcoin/wallet/releases/download/1.0.0-a1/vigcoin-linux-64.zip";
+  WindowsURL = "https://github.com/vigcoin/wallet/releases/download/1.0.0-b1/vigcoin-installer-v1.0.exe";
+  LinuxURL = "https://github.com/vigcoin/wallet/releases/download/1.0.0-b1/VIGCOIN-x86_64.AppImage";
 }
