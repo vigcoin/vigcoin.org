@@ -324,6 +324,9 @@ MIT
 @ionic/angular
 MIT
 
+@angular/core
+MIT
+
 @angular/common
 MIT
 
@@ -331,6 +334,9 @@ MIT
 MIT
 
 @angular/router
+MIT
+
+@ngx-translate/http-loader
 MIT
 
 @ionic-native/splash-screen
@@ -343,7 +349,7 @@ loader
 
 icon-loader
 
-@angular/core
+@ngx-translate/core
 MIT
 
 zone.js

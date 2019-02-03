@@ -10,29 +10,33 @@
   <ion-card class="welcome-card">
     <ion-img src="/assets/shapes.svg"></ion-img>
     <ion-card-header>
-      <ion-card-subtitle>欢迎使用 VIG COIN</ion-card-subtitle>
-      <ion-card-title>一个通用的可接入互联网加密币</ion-card-title>
+      <ion-card-subtitle>{{ 'WELCOME' | translate }}</ion-card-subtitle>
+      <ion-card-title>{{ 'WELCOME-TITLE' | translate }}</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ol>
-        <li>为服务于个人、小型企业或者小型组织创建的币</li>
-        <li>以提供方便的自带点对点交易能力为目标的币</li>
+        <li>{{ 'INTRO-1' | translate }}</li>
+        <li>{{ 'INTRO-2' | translate }}</li>
+        <li>{{ 'INTRO-3' | translate }}</li>
+        <li>{{ 'INTRO-4' | translate }}</li>
+        <li>{{ 'INTRO-5' | translate }}</li>
       </ol>
     </ion-card-content>
   </ion-card>
+  <!--
   <ion-grid>
     <ion-row>
       <ion-col col-6>
         <ion-card>
           <ion-card-header color="primary">
-            交易应该能不受限制的发生
+            {{ 'TITLE-1' | translate }}
           </ion-card-header>
           <ion-card-content>
-            <p>由于交易所模式会导致交易所上的交易都是基于交易所内部的，这种交易模式存在很大的问题。</p>
+            <p>{{ 'TITLE-1-1' | translate }}</p>
             <ol>
-              <li>交易者的资产不受法律保护,交易所出问题很容易导致资产受损</li>
-              <li>方便了黑客的入侵，因为币与私钥都保存在交易所，极容易导致黑客入侵造成损失。资产的安全性极差。</li>
-              <li>交易的法币提现极不方便，多数交易所要求提示时提供各种复杂的手续，除了容易泄漏个人隐私外，并不见得能带来任何的好处。</li>
+              <li>{{ 'TITLE-1-1-1' | translate }}</li>
+              <li>{{ 'TITLE-1-1-2' | translate }}</li>
+              <li>{{ 'TITLE-1-1-3' | translate }}</li>
             </ol>
           </ion-card-content>
         </ion-card>
@@ -40,7 +44,7 @@
       <ion-col col-6>
         <ion-card>
           <ion-card-header color="primary">
-            加密币应该是一种支付手段
+            {{ 'TITLE-2' | translate }}
           </ion-card-header>
           <ion-card-content>
             <p>加密币不是股票，也不是传销，它应该是一种支付手段。从比特币出来，到以太坊的出现，加密币成了圈钱，传销者们的主要工具，越来越脱离货币的本质。vig coin旨在进一步推动加密币成为现实的货币。 </p>
@@ -55,28 +59,29 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+-->
   <ion-card>
     <ion-card-header color="primary">
-      基本目标
+      {{ 'TITLE-3' | translate }}
     </ion-card-header>
     <ion-card-content>
       <ol>
-        <li>作为一个基本的支付手段 </li>
-        <li>提供自带去中心，点对点交易所的能力</li>
-        <li>提供可能的仲裁，防骗能力，让交易更加的安全</li>
-        <li>提供基于Vig Coin的方便的支付与接收API与SDK</li>
-        <li>在合法的情况下，提供与法币的交易能力 </li>
+        <li>{{ 'TITLE-3-1' | translate }}</li>
+        <li>{{ 'TITLE-3-2' | translate }}</li>
+        <li>{{ 'TITLE-3-3' | translate }}</li>
+        <li>{{ 'TITLE-3-4' | translate }}</li>
+        <li>{{ 'TITLE-3-5' | translate }}</li>
       </ol>
     </ion-card-content>
   </ion-card>
 
   <ion-card>
-      <ion-card-header color="primary">
-        详细介绍与白皮书
-      </ion-card-header>
-      <ion-card-content>
-          <p>详细介绍地址：https://github.com/vigcoin/wiki</p>
-          <p>白皮书地址：https://github.com/vigcoin/wiki/blob/master/White-Paper.md</p>
-        </ion-card-content>
-    </ion-card>
+    <ion-card-header color="primary">
+      {{ 'TITLE-4' | translate }}
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ 'TITLE-4-1' | translate }}https://github.com/vigcoin/wiki</p>
+      <p>{{ 'TITLE-4-2' | translate }}https://github.com/vigcoin/wiki/blob/master/White-Paper.md</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
