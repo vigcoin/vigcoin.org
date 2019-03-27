@@ -1,27 +1,34 @@
 import { Component } from '@angular/core';
-
-import { Platform } from '@ionic/angular';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
+declare var particlesJS: any;
+declare var $: any;
 import { TranslateService } from '@ngx-translate/core';
+
+import { faWindows, faLinux } from '@fortawesome/free-brands-svg-icons';
+import { faCloud, faDownload } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app.component.html'
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
+  title = 'vigcoin';
   supportedLanguages = ['en', 'zh'];
+
+  faWindows = faWindows;
+  faLinux = faLinux;
+  faCloud = faCloud;
+  faDownload = faDownload;
+  active = 0;
+
+  WindowsURL = "https://github.com/vigcoin/wallet/releases/download/1.0.0-b1/vigcoin-wallet-installer-v1.0.0-b2.msi";
+  LinuxURL = "https://github.com/vigcoin/wallet/releases/download/1.0.0-b1/VIGCOIN-x86_64.AppImage";
+
   constructor(
-    private platform: Platform,
-    private splashScreen: SplashScreen,
-    private statusBar: StatusBar,
     private translate: TranslateService
   ) {
-    this.initializeApp();
     this.setLocale(this.getLocaleString());
   }
-
   getLocaleString() {
     let locale = navigator.language;
     if (this.supportedLanguages.indexOf(locale) !== -1) {
@@ -39,10 +46,12 @@ export class AppComponent {
     this.translate.use(locale);
   }
 
-  initializeApp() {
-    this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
+  ngOnInit() {
+    particlesJS.load('particles-js', "/assets/particles.json", function () {
+      console.log('callback - particles.js config loaded');
+    });
+    $('.carousel').carousel({
+      interval: 10000
     });
   }
 }
