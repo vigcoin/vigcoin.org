@@ -27,7 +27,6 @@ export class AppComponent {
   constructor(
     private translate: TranslateService
   ) {
-    this.setLocale(this.getLocaleString());
   }
   getLocaleString() {
     let locale = navigator.language;
@@ -44,6 +43,10 @@ export class AppComponent {
   setLocale(locale: string) {
     this.translate.setDefaultLang(locale);
     this.translate.use(locale);
+    $('select').val(locale);
+    $('.selectpicker').selectpicker('refresh');
+    localStorage.setItem("locale", locale);
+
   }
 
   ngOnInit() {
@@ -54,19 +57,17 @@ export class AppComponent {
       interval: 10000
     });
     $('.selectpicker').selectpicker();
-    let language = localStorage.getItem("language");
-    if (!language) {
-      language = "en";
+    let locale = localStorage.getItem("locale");
+    console.log("locale = ", locale);
+    if (!locale) {
+      locale = this.getLocaleString();
     }
-    $('select').val(language);
-    this.setLocale(language);
-    $('.selectpicker').selectpicker('refresh');
-    $('.selectpicker').on('changed.bs.select', (e, clickedIndex, isSelected, previousValue) => {
+    this.setLocale(locale);
+
+    $('.selectpicker').on('changed.bs.select', (e) => {
       console.log("change detected!");
       console.log(e.target.value);
-      // $('select').val(e.target.value);
       this.setLocale(e.target.value);
-      localStorage.setItem("language", e.target.value);
     });
 
   }
