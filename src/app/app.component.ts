@@ -53,5 +53,21 @@ export class AppComponent {
     $('.carousel').carousel({
       interval: 10000
     });
+    $('.selectpicker').selectpicker();
+    let language = localStorage.getItem("language");
+    if (!language) {
+      language = "en";
+    }
+    $('select').val(language);
+    this.setLocale(language);
+    $('.selectpicker').selectpicker('refresh');
+    $('.selectpicker').on('changed.bs.select', (e, clickedIndex, isSelected, previousValue) => {
+      console.log("change detected!");
+      console.log(e.target.value);
+      // $('select').val(e.target.value);
+      this.setLocale(e.target.value);
+      localStorage.setItem("language", e.target.value);
+    });
+
   }
 }
