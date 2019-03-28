@@ -86,20 +86,29 @@ h1 {
   }
 }
 
-.mining {
-  text-align: center;
+.mining, .development {
   h3 {
     font-size: 36px;
-
+    text-align: center;
     color: #dc3545
   }
   img {
     width: 100%;
   }
   p {
+    text-align: left;
     font-size: 32px;
+    padding-left: 20px;
     color: #ccc;
   }
+}
+
+.development {
+  p {
+    text-align: right;
+    font-size: 32px;
+    padding-right: 20px;
+  } 
 }
 
 .contact {
