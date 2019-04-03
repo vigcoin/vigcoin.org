@@ -8,6 +8,7 @@
     "NAV-MINING": "挖矿",
     "NAV-DEVELOPMENT": "开发",
     "NAV-CONTACT": "联系",
+    "NAV-DONATION": "捐助",
     "WELCOME": "欢迎使用 VIG COIN!",
     "WELCOME-TITLE": "一个快速开发的用于互联网支付与实际生活支付的加密币",
     "WELCOME-SUB-TITLE": "VIG COIN的目标是成为一个去中心化，安全，注意隐私，请求证明，节能，Web友好的加密币。",
@@ -39,6 +40,7 @@
     "ROADMAP-STATE-PROGRESSING": "进行中",
     "ROADMAP-STATE-PLANNED": "已计划",
     "EXCHANGE-NAME-1": "QBTC",
+    "EXCHANGE-NAME-1-URL": "https://www.qbtc.ink/trade?symbol=VIG_CNYT",
     "EXCHANGE-BUY": "购买",
     "MINING-T1": "官方矿池",
     "MINING-T1-1": "VIG COIN鼓励用户自建矿池。",
@@ -54,9 +56,11 @@
     "DEVELOPMENT-T1-5": "项目组包括了加密币核心代码，钱包，矿池，主站页面等的源码。",
     "DEVELOPMENT-T1-6": "cryptonote-rust是由VIG COIN开发团队的创建并维护的。它旨在在Rust上实现CyrptoNote。",
     "DEVELOPMENT-T1-7": "它位于：",
+    "DONATION-BITCOIN": "比特币",
+    "DONATION-MONERO": "门罗币",
+    "DONATION-VIGCOIN": "伟哥币",
     "FOUNDATION": "VIG COIN基金会",
     "RIGHTS": "保留所有版权。",
     "LANGUAGES": "语言选择",
-
     "END": ""
 }

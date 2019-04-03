@@ -196,10 +196,9 @@
   <h1 class="border-left"><a name="exchange"></a>{{ 'NAV-EXCHANGE' | translate }}</h1>
   <div class="row exchange">
     <div class="col-sm text-center">
-      <p> <a class="btn btn-outline-primary btn-lg"
-          href="https://www.qbtc.ink/">{{ 'EXCHANGE-NAME-1' | translate }}</a>
+      <p> <a class="btn btn-outline-primary btn-lg" href="https://www.qbtc.ink/">{{ 'EXCHANGE-NAME-1' | translate }}</a>
       </p>
-      <p><a class="btn btn-primary btn-lg" href="https://www.qbtc.ink/">{{ 'EXCHANGE-BUY' | translate }}</a></p>
+      <p><a class="btn btn-primary btn-lg" href="{{'EXCHANGE-NAME-1-URL' | translate }}">{{ 'EXCHANGE-BUY' | translate }}</a></p>
     </div>
     <div class="col-sm text-center">
     </div>
@@ -286,6 +285,39 @@
       </p>
     </div>
   </div>
+
+  <div class="container-fluid">
+    <h1 class="border-left"><a name="donation"></a>{{ 'NAV-DONATION' | translate }}</h1>
+    <div class="row donation">
+      <div class="col-sm text-center">
+        <p> <a class="btn btn-outline-primary btn-lg" href="https://www.bitcoin.org/">
+            <fa-icon [icon]="faBitcoin"></fa-icon>
+            {{ 'DONATION-BITCOIN' | translate }}
+          </a>
+        </p>
+        <p>1BVaQaUHk46nXf1z7kBfgGG5pfPigUKU25</p>
+      </div>
+      <div class="col-sm text-center">
+        <p> <a class="btn btn-outline-primary btn-lg" href="https://www.getmonero.org/">
+            <fa-icon [icon]="faMonero"></fa-icon>
+            {{ 'DONATION-MONERO' | translate }}
+          </a>
+        </p>
+        <p>43cp7U2RUPSQSRcHBR8nSbVgqWEvJRbwDLjuRxWnsKeo7Ses1c2JhNWgiWXwgpwnhyHRocPVJTQCtURkHkGksm8q7B8ewca</p>
+      </div>
+      <div class="col-sm text-center">
+          <p> <a class="btn btn-outline-primary btn-lg" href="https://vigcoin.org/">
+            <img class="logo" src="/assets/images/logo.png"/>
+            {{ 'DONATION-VIGCOIN' | translate }}
+          </a>
+        </p>
+        <p>
+          BEeNs16NuyMemqjvWgpynN8EGh7Ri3RGgFmoSquB6YcG8uk1HhZsxB6Jj2KAufgSxsMYsFoFWrFMXMgw7qGKjkZwHj2NGKm
+        </p>
+      </div>
+    </div>
+  </div>
+
   <div class="row about">
     <div class="col-sm">
       <p>2017-2019 &copy; VIG COIN &trade;</p>
