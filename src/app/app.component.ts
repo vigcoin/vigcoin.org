@@ -4,7 +4,7 @@ declare var $: any;
 import { TranslateService } from '@ngx-translate/core';
 
 import { faWindows, faLinux, faBitcoin, faMonero } from '@fortawesome/free-brands-svg-icons';
-import { faCloud, faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faCloud, faDownload, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +21,7 @@ export class AppComponent {
   faDownload = faDownload;
   faMonero = faMonero;
   faBitcoin = faBitcoin;
+  faExternalLinkAlt = faExternalLinkAlt;
   active = 0;
 
   WindowsURL = "https://github.com/vigcoin/wallet/releases/download/1.0.0-b1/vigcoin-wallet-installer-v1.0.0-b2.msi";

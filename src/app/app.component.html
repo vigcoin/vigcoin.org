@@ -198,7 +198,8 @@
     <div class="col-sm text-center">
       <p> <a class="btn btn-outline-primary btn-lg" href="https://www.qbtc.ink/">{{ 'EXCHANGE-NAME-1' | translate }}</a>
       </p>
-      <p><a class="btn btn-primary btn-lg" href="{{'EXCHANGE-NAME-1-URL' | translate }}">{{ 'EXCHANGE-BUY' | translate }}</a></p>
+      <p><a class="btn btn-primary btn-lg"
+          href="{{'EXCHANGE-NAME-1-URL' | translate }}">{{ 'EXCHANGE-BUY' | translate }}</a></p>
     </div>
     <div class="col-sm text-center">
     </div>
@@ -244,6 +245,23 @@
       </p>
     </div>
 
+  </div>
+  <h1 class="border-left"><a name="code"></a>{{ 'NAV-CODE' | translate }}</h1>
+  <div class="row code">
+    <div class="col-sm">
+      <h3>{{ 'CODE-T1' | translate }}</h3>
+      <p class="text-center"><a class="btn btn-outline-primary btn-lg"
+          href="https://github.com/vigcoin">{{ 'CODE-T1-1' | translate }} <fa-icon [icon]="faExternalLinkAlt"></fa-icon></a></p>
+      <p class="text-center"><a class="btn btn-outline-primary btn-lg"
+          href="https://github.com/vigcoin/coin">{{ 'CODE-T1-2' | translate }} <fa-icon [icon]="faExternalLinkAlt"></fa-icon></a></p>
+      <p class="text-center"><a class="btn btn-outline-primary btn-lg"
+          href="https://github.com/vigcoin/wallet">{{ 'CODE-T1-3' | translate }} <fa-icon [icon]="faExternalLinkAlt"></fa-icon></a></p>
+    </div>
+    <div class="col-sm">
+      <h3>{{ 'CODE-T2' | translate }}</h3>
+      <p class="text-center"><a class="btn btn-outline-primary btn-lg"
+          href="https://github.com/cryptonote-rust">{{ 'CODE-T2-1' | translate }} <fa-icon [icon]="faExternalLinkAlt"></fa-icon></a></p>
+    </div>
   </div>
 </div>
 
@@ -306,8 +324,8 @@
         <p>43cp7U2RUPSQSRcHBR8nSbVgqWEvJRbwDLjuRxWnsKeo7Ses1c2JhNWgiWXwgpwnhyHRocPVJTQCtURkHkGksm8q7B8ewca</p>
       </div>
       <div class="col-sm text-center">
-          <p> <a class="btn btn-outline-primary btn-lg" href="https://vigcoin.org/">
-            <img class="logo" src="/assets/images/logo.png"/>
+        <p> <a class="btn btn-outline-primary btn-lg" href="https://vigcoin.org/">
+            <img class="logo" src="/assets/images/logo.png" />
             {{ 'DONATION-VIGCOIN' | translate }}
           </a>
         </p>
