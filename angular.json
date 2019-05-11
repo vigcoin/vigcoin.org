@@ -93,7 +93,8 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/flag-icon-css/sass/flag-icon.scss"
             ],
             "scripts": [],
             "assets": [
