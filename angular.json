@@ -146,5 +146,8 @@
       }
     }
   },
-  "defaultProject": "vigcoin"
+  "defaultProject": "vigcoin",
+  "cli": {
+    "analytics": "bf7a8b2e-a159-44ad-ba7c-8b560b823c2c"
+  }
 }
