@@ -3,7 +3,7 @@ declare var particlesJS: any;
 declare var $: any;
 import { TranslateService } from '@ngx-translate/core';
 
-import { faWindows, faLinux, faBitcoin, faMonero } from '@fortawesome/free-brands-svg-icons';
+import { faWindows, faLinux } from '@fortawesome/free-brands-svg-icons';
 import { faCloud, faDownload, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -19,8 +19,6 @@ export class HomeComponent {
   faLinux = faLinux;
   faCloud = faCloud;
   faDownload = faDownload;
-  faMonero = faMonero;
-  faBitcoin = faBitcoin;
   faExternalLinkAlt = faExternalLinkAlt;
   active = 0;
 

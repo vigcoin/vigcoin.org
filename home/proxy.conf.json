@@ -1,0 +1,12 @@
+{
+  "/getinfo": {
+    "target": "https://rpc.vigcoin.org",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/json_rpc": {
+    "target": "https://rpc.vigcoin.org",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
