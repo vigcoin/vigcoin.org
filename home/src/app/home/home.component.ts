@@ -51,9 +51,9 @@ export class HomeComponent {
   }
 
   ngOnInit() {
-    particlesJS.load('particles-js', "/assets/particles.json", function () {
-      console.log('callback - particles.js config loaded');
-    });
+    // particlesJS.load('particles-js', "/assets/particles.json", function () {
+    //   console.log('callback - particles.js config loaded');
+    // });
     $('.carousel').carousel({
       interval: 10000
     });

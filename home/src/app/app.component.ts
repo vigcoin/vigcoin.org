@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 declare var $: any;
+declare var Swiper: any;
 import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-root',
@@ -35,6 +36,15 @@ export class AppComponent {
   }
 
   ngOnInit() {
+    // offcanvas script from Bootstrap + added element to close menu on click in small viewport
+    $('[data-toggle="offcanvas"], .navbar-nav li a:not(.dropdown-toggle').on('click', function () {
+      $('.offcanvas-collapse').toggleClass('open')
+    });
+
+    setTimeout(() => {
+      this.swiperInit();
+    }, 0);
+
     $('.selectpicker').selectpicker();
     let locale = localStorage.getItem("locale");
     console.log("locale = ", locale);
@@ -49,5 +59,32 @@ export class AppComponent {
       this.setLocale(e.target.value);
     });
 
+  }
+
+  swiperInit() {
+    new Swiper('.card-slider', {
+      autoplay: {
+        delay: 8000,
+        disableOnInteraction: false
+      },
+      loop: false,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      slidesPerView: 2,
+      spaceBetween: 70,
+      breakpoints: {
+        // when window is <= 767px
+        767: {
+          slidesPerView: 1
+        },
+        // when window is <= 991px
+        991: {
+          slidesPerView: 2,
+          spaceBetween: 40
+        }
+      }
+    });
   }
 }
