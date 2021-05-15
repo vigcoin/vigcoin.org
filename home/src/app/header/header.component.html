@@ -1,50 +1,53 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><img class="logo" src="/assets/images/logo.png" /> VIG COIN</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-light">
+  <div class="container">
 
-  <div class="collapse navbar-collapse nav-right" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-    </ul>
-    <ul class="navbar-nav">
-      <li class="nav-item" [ngClass]="{ active: url === '' }">
-        <a class="nav-link" href="">{{ 'NAV-HOME' | translate }}<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#philosophy">{{ 'NAV-PHILOSOPHY' | translate }}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#technology">{{ 'NAV-TECHNOLOGY' | translate }}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#roadmap">{{ 'NAV-ROADMAP' | translate }}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#wallet">{{ 'NAV-WALLET' | translate }}</a>
-      </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="#exchange">{{ 'NAV-EXCHANGE' | translate }}</a>
-      </li> -->
-      <li class="nav-item">
-        <a class="nav-link" href="#mining">{{ 'NAV-MINING' | translate }}</a>
-      </li>
-      <li class="nav-item" [ngClass]="{ active: url === 'explorer' }">
-        <a class="nav-link" href="#/explorer">{{ "NAV-EXPLORER" | translate }}
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#development">{{ 'NAV-DEVELOPMENT' | translate }}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">{{ 'NAV-CONTACT' | translate }}</a>
-      </li>
-    </ul>
-    <select class="selectpicker" data-width="auto" data-style="btn-dark">
-      <option value="en" data-content='<span class="flag-icon flag-icon-us"></span> English '>English</option>
-      <!-- <option value="mx" data-content='<span class="flag-icon flag-icon-mx"></span> Español '>Español</option> -->
-      <option value="zh" data-content='<span class="flag-icon flag-icon-cn"></span> 中文 '>中文</option>
-    </select>
-  </div>
-</nav>
+    <!-- Text Logo - Use this if you don't have a graphic logo -->
+    <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Pavo</a> -->
+
+    <!-- Image Logo -->
+    <a class="navbar-brand logo-image" href="#"><img src="../../assets/images/logo1.png" alt="alternative"></a>
+
+    <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="">{{ 'NAV-HOME' | translate }}<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#philosophy">{{ 'NAV-PHILOSOPHY' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#technology">{{ 'NAV-TECHNOLOGY' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#roadmap">{{ 'NAV-ROADMAP' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#wallet">{{ 'NAV-WALLET' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#mining">{{ 'NAV-MINING' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#explorer">{{ "NAV-EXPLORER" | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#development">{{ 'NAV-DEVELOPMENT' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#contact">{{ 'NAV-CONTACT' | translate }}</a>
+        </li>
+      </ul>
+      <select class="selectpicker" data-width="auto" data-style="btn-dark">
+        <option value="en" data-content='<span class="flag-icon flag-icon-us"></span> English '>English</option>
+        <!-- <option value="mx" data-content='<span class="flag-icon flag-icon-mx"></span> Español '>Español</option> -->
+        <option value="zh" data-content='<span class="flag-icon flag-icon-cn"></span> 中文 '>中文</option>
+      </select>
+    </div> <!-- end of navbar-collapse -->
+  </div> <!-- end of container -->
+</nav> <!-- end of navbar -->
+<!-- end of navigation -->
